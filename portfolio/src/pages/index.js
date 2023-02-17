@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 import ChankoLogo from "@/components/ChankoLogo";
+import { DecoderText} from "@/components/DecoderText";
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -17,11 +18,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
         <nav id="nav" className={styles.navBar}>
-
             <ul>
-                <li><a href='#' className={styles.chankoLogo}>
-                <ChankoLogo/>
-            </a></li>
                 <li><a href='#' className={styles.navBarList}>About me</a></li>
                 <li><a href='#' className={styles.navBarList}>Projects</a></li>
                 <li><a href='#' className={styles.navBarList}>Articles</a></li>
@@ -29,9 +26,22 @@ export default function Home() {
             </ul>
 
         </nav>
-      <main className={styles.main}>
+      <section className={styles.main}>
+          <div className={styles.intro}>
+              <span className={styles.name}>
+                  Eric Chang
+              </span>
+              <br/>
+              <span className={styles.roles}>
+                 Developer
+                    <br/>
+                 Analyst
+              </span>
+          </div>
+      </section>
+    <section className={styles.project}>
 
-      </main>
+    </section>
     </>
   )
 }

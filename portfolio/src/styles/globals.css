@@ -1,9 +1,9 @@
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+  --japanese-font-fam: ヒラギノ角ゴ Pro W3, Hiragino Kaku Gothic Pro, Hiragino Sans, Osaka, メイリオ, Meiryo, Segoe UI, sans-serif, serif;;
+  --nav-text-color: #457b9d;
+  --main-text-color: #1d3557;
 
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
