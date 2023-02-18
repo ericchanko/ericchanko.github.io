@@ -1,0 +1,14 @@
+.sectionHeader {
+    margin: 5rem auto auto;
+    width: 45rem;
+    height: auto;
+    background-color: var(--container-background-color);
+    border-radius: var(--border-radius);
+}
+
+.sectionTitle {
+    font-size: 30px;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}

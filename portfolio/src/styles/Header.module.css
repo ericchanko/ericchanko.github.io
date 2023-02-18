@@ -1,0 +1,7 @@
+.header {
+    margin: 2rem auto auto;
+    width: 45rem;
+    height: 60px;
+    background-color: var(--container-background-color);
+    border-radius: var(--border-radius);
+}
