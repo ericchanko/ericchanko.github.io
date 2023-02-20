@@ -1,0 +1,8 @@
+.featured {
+    background-color: var(--container-background-color);
+    border-radius: var(--container-border-radius);
+    height: 440px;
+    width: 460px;
+    margin: 10px;
+    grid-area: featured;
+}

@@ -5,7 +5,9 @@ import styles from '@/styles/Home.module.css'
 import Header from "@/components/Header"
 import About from "@/components/About"
 import SectionHeader from "@/components/SectionHeader";
-import {CircleIndicator} from "@/components/CircleIndicator";
+import FeaturedCard from "@/components/FeaturedCard";
+import { motion } from "framer-motion";
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,7 +20,68 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <About />
+        <main className={styles.main}>
+            <div className={styles.headerContainer}>
+                <span className={styles.title}>
+                    <h3>Eric Chang</h3>
+                </span>
+                <span className={styles.description}>
+                    Software Developer - Data Analyst
+                </span>
+            </div>
+            <div className={styles.mainGrid}>
+
+                 <section className={styles.featured}>
+                     <div className={styles.featuredContent}>
+                         <h3>About Me</h3>
+                         <div>dwadsa wad wad  awd wa dwa d wad wa dw ad wad wa dw ad wa daw d</div>
+                         <img className={styles.portrait} src="/me.jpeg"/>
+                     </div>
+
+                </section>
+
+                <section className={styles.projects}>
+
+                </section>
+                <section className={styles.photography}>
+
+                </section>
+            </div>
+            <section className={styles.timeline}>
+
+            </section>
+            <div className={styles.footer}>
+            <span>Socials & Resume</span>
+             <a href="https://github.com/ericchanko">
+              <img
+                className={styles.social}
+                src="https://img.shields.io/badge/github-%2324292f.svg?&style=for-the-badge&logo=github&logoColor=white"
+                alt="github"
+              />
+            </a>
+             <a href="https://www.linkedin.com/in/echanko/">
+              <img
+                className={styles.social}
+                src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"
+                alt="linkedin"
+              />
+            </a>
+            <a href="./EricChang_2023_SWE_Resume.pdf">
+              <button className={styles.button}>
+                Resume - SWE
+              </button>
+            </a>
+             <a href="./Eric_Chang_2023_DataAnalyst_Resume.pdf">
+              <button className={styles.button}>
+                Resume - Data Analyst
+              </button>
+            </a>
+            <span className={styles.copyright}>
+                © 2023 Eric Chang. Crafted and designed by me :)
+            </span>
+        </div>
+        </main>
+
     </>
   )
 }

@@ -1,12 +1,12 @@
-.about {
-    margin: auto;
-    margin-top: 5rem;
-    width: 60rem;
-    height: 90vh;
-    background-color: var(--container-background-color);
-    border-radius: var(--border-radius);
-    font-size: 28px;
-}
+/*.about {*/
+/*    margin: auto;*/
+/*    margin-top: 5rem;*/
+/*    width: 60rem;*/
+/*    height: 90vh;*/
+/*    background-color: var(--container-background-color);*/
+/*    border-radius: var(--border-radius);*/
+/*    font-size: 28px;*/
+/*}*/
 
 .container {
     width: 100%;

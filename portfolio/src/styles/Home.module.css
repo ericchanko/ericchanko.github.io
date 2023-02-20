@@ -1,3 +1,141 @@
 .main {
+    margin: 2.5rem auto auto;
+    width: 60rem;
+    height: 820px;
+    background-color: var(--main-background-color);
+    border-radius: var(--background-border-radius);
+    font-size: 28px;
+    max-width: 1000px;
+    /*background-image: url("/wavy.jpeg");*/
+}
 
+.headerContainer {
+    display: grid;
+    padding-top: 20px;
+}
+
+.title {
+    text-align: center;
+    font-size: 50px;
+}
+
+.description {
+    text-align: center;
+}
+
+.mainGrid {
+    width: 60rem;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "featured featured project project"
+        "featured featured photo photo"
+}
+
+/* Makes all items inside grid have same width */
+.mainGrid * {
+    width: 460px;
+}
+
+.featured {
+    background-color: #fca311;
+    border-radius: var(--container-border-radius);
+    height: 440px;
+    grid-area: featured;
+}
+
+.featuredContent {
+    height: 100%;
+    width: 80%;
+    margin: auto;
+
+}
+
+.featuredContent *{
+    width: 100%;
+}
+
+.featuredContent h3 {
+    text-align: center;
+    margin-top: 10px;
+    grid-area: title;
+}
+
+.featuredContent div{
+    grid-area: about;
+    border-radius: var(--container-border-radius);
+}
+
+.portrait {
+    max-width: 100px;
+    height: auto;
+}
+
+.projects {
+    background-color: #e85d04;
+    border-radius: var(--container-border-radius);
+    height: 205px;
+    grid-area: project;
+    margin: 10px;
+}
+
+.photography {
+    background-color: #9d0208;
+    border-radius: var(--container-border-radius);
+    height: 205px;
+    grid-area: photo;
+    margin: 10px;
+}
+
+.timeline {
+    background-color: #bfbdbd;
+    border-radius: var(--container-border-radius);
+    width: 940px;
+    height: 170px;
+    margin: 10px;
+}
+
+.footer {
+    width: 900px;
+    bottom: 70px;
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+        ". . . . ."
+        "copyright copyright copyright copyright copyright"
+}
+
+.footer *, .grid * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.button {
+    padding: 0 38px;
+    margin-right: 5px;
+    border: 2px solid #AAA;
+    border-radius: 100px;
+    height: 30px;
+    width: auto;
+    background: None;
+    font-weight: bold;
+}
+
+.button:hover, .button:focus {
+    /*animation: pulse 1s;*/
+
+    box-shadow: 0 0.5em 0.5em -0.4em black;
+    transform: translateY(-0.25em);
+}
+
+.copyright {
+    grid-area: copyright;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10px;
 }
