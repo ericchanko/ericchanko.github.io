@@ -6,6 +6,7 @@
     border-radius: var(--background-border-radius);
     font-size: 28px;
     max-width: 1000px;
+    overflow: hidden;
     /*background-image: url("/wavy.jpeg");*/
 }
 
@@ -43,6 +44,7 @@
     border-radius: var(--container-border-radius);
     height: 440px;
     grid-area: featured;
+    margin: 10px;
 }
 
 .featuredContent {
@@ -78,6 +80,7 @@
     height: 205px;
     grid-area: project;
     margin: 10px;
+    border: none;
 }
 
 .photography {

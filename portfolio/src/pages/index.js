@@ -6,6 +6,7 @@ import Header from "@/components/Header"
 import About from "@/components/About"
 import SectionHeader from "@/components/SectionHeader";
 import FeaturedCard from "@/components/FeaturedCard";
+import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
 
 
@@ -34,15 +35,15 @@ export default function Home() {
                  <section className={styles.featured}>
                      <div className={styles.featuredContent}>
                          <h3>About Me</h3>
-                         <div>dwadsa wad wad  awd wa dwa d wad wa dw ad wad wa dw ad wa daw d</div>
+                         <div></div>
                          <img className={styles.portrait} src="/me.jpeg"/>
                      </div>
 
                 </section>
 
-                <section className={styles.projects}>
-
-                </section>
+                <button className={styles.projects}>
+                    <h1>Projects</h1>
+                </button>
                 <section className={styles.photography}>
 
                 </section>
@@ -50,36 +51,7 @@ export default function Home() {
             <section className={styles.timeline}>
 
             </section>
-            <div className={styles.footer}>
-            <span>Socials & Resume</span>
-             <a href="https://github.com/ericchanko">
-              <img
-                className={styles.social}
-                src="https://img.shields.io/badge/github-%2324292f.svg?&style=for-the-badge&logo=github&logoColor=white"
-                alt="github"
-              />
-            </a>
-             <a href="https://www.linkedin.com/in/echanko/">
-              <img
-                className={styles.social}
-                src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"
-                alt="linkedin"
-              />
-            </a>
-            <a href="./EricChang_2023_SWE_Resume.pdf">
-              <button className={styles.button}>
-                Resume - SWE
-              </button>
-            </a>
-             <a href="./Eric_Chang_2023_DataAnalyst_Resume.pdf">
-              <button className={styles.button}>
-                Resume - Data Analyst
-              </button>
-            </a>
-            <span className={styles.copyright}>
-                © 2023 Eric Chang. Crafted and designed by me :)
-            </span>
-        </div>
+            <Footer className={styles.footer} />
         </main>
 
     </>
